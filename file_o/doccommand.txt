@@ -1,0 +1,1 @@
+7020L-154996-M:ATRC_DockerArtifacts pronabp$ docker run  -p 8090:8090 --volume /Users/pronabp/data-docker/ATRC_DockerArtifacts/nodejs-simple-file-upload:/usr/src/app 1f6a3c70769284af0d5fc1ab29726436bd8b23fc680cfa9952d4a79d3
