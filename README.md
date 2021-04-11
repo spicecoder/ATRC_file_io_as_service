@@ -18,11 +18,10 @@ After cloning the repo , steps are described below.
  For  file  ingestion , all your local input files should be in the directory file_i , where as all your output files will be in the directory file_o.
  
  
-For ingestion 
-cd file_i.
+For ingestion   : cd file_i.
 
 
-Run docker build . -t filein  (this command will build a docker image as per the Dockerfile in file_i directory.
+Run : docker build . -t filein  (this command will build a docker image as per the Dockerfile in file_i directory.
 
 
 Once  the image is ready , you can run the image ,while exposing the port 8090 ,e.g:docker run -p 8090:8090 docker.io/library/filin
@@ -32,13 +31,13 @@ This will expose the port 8090 for filr input , which you can access using http 
 For file ouput :
 
 cd file_o 
-For file_o the docker image will  map  the current directory to workspace ,and hence the filename in the URL will be created in the current directory .
+For file_o the docker image will  map  the current directory to  docker workingdir ,and hence the filename in the URL will be created in the current directory .
 
 
 For the purpose of doing volume map you shall need the full path of your current directory 
 e.g :/Users/pronabp/nectarlab/file_io_as_service/file_o ; This directory has to be volume mapped to the dockerfile working directory - whch is :/usr/src/app . 
 
-Run docker build .  -t filleout
+Run:  docker build .  -t filleout
 
 Once the image tagged as fileout is ready , you can run the image :
 docker run --volume /Users/pronabp/nectarlab/file_io_as_service/file_o:/usr/src/app -p 8093:8093 docker.io/library/fileout
