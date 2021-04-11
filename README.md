@@ -10,7 +10,7 @@ Instead you start doing the file I/O using an URL like localhost:8090/myfile.txt
 
 This elevation of your code from OS bound file i/O is the absolute first step in making your code a good Kubernetes citizen.
 
-Here is the detail of how to use the docker files available in the two directories file_i ,File_o for file ingest and ouput respectively.
+Here is the detail of how to use the docker files available in the two directories file_i ,file_o for file ingest and ouput respectively.
 
 After cloning the repo , steps are described below.
 
