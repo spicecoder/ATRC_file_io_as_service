@@ -40,7 +40,7 @@ e.g :/Users/pronabp/nectarlab/file_io_as_service/file_o ; This directory has to 
 Run:  docker build .  -t filleout
 
 Once the image tagged as fileout is ready , you can run the image :
-docker run --volume /Users/pronabp/nectarlab/file_io_as_service/file_o:/usr/src/app -p 8093:8093 docker.io/library/fileout
+e.g docker run --volume /Users/pronabp/nectarlab/file_io_as_service/file_o:/usr/src/app -p 8093:8093 docker.io/library/fileout
 
 
 This will expose the URL :  localhost:8093/write2.txt , e.g and write the content of body in the POST request to the file name supplied in the URL. 
