@@ -1,0 +1,2 @@
+https://jscomplete.com/learn/node-beyond-basics/node-streams
+https://www.digitalocean.com/community/tutorials/how-to-work-with-files-using-streams-in-node-js
