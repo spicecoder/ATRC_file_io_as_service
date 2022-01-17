@@ -1,0 +1,7 @@
+show_phrasespace xxxxxxx
+add_phrasespace  xxxxxxxxx
+add_phrase   xxxxxxxxx
+add_phrase_to_phrasespace  (1)xxxxxx  (2)yyyyyyyy 1: phrasespace 
+.."" for delete
+login 
+logout                           
