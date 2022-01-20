@@ -31,7 +31,7 @@ let data = {
   authUrl: authUrl,
   userName: "pronab.pal@unimelb.edu.au",
   // apiKey: "admin", // v1
-  apiKey: "NWE5MjU0NDU4ZmIzOWQy",
+  apiKey: "xxxxxxxxxxxxxx",
   tenant: "ATRC_1",
   domain: "Default",
   tenantDomain: "Default",
