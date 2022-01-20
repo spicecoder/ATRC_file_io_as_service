@@ -2,7 +2,7 @@
   authUrl: authUrl,$OS_AUTH_URL
   userName: "pronab.pal@unimelb.edu.au", $OS_USERNAME
   // apiKey: "admin", // v1
-  apiKey: "NWE5MjU0NDU4ZmIzOWQy",$OS_PASSWORD
+  apiKey: "",$OS_PASSWORD
   tenant: "ATRC_1",
   domain: "Default",
   tenantDomain: "Default",
@@ -15,8 +15,8 @@ export OS_AUTH_URL=https://keystone.rc.nectar.org.au:5000/v3/
 export OS_IDENTITY_API_VERSION=3
 export OS_REGION_NAME="Melbourne"
 export OS_INTERFACE=public
-export OS_APPLICATION_CREDENTIAL_ID=b40b7db2c9ca4debb1c6213dd30c28ab
-export OS_APPLICATION_CREDENTIAL_SECRET=storeobject
+export OS_APPLICATION_CREDENTIAL_ID= 
+export OS_APPLICATION_CREDENTIAL_SECRET= 
 
 
 the python affair :
