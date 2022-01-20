@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locationtrack </title>t
+</head>
+<body>
+    <h1> Brand new day</h1>
+    <div id="dombooze"> greetings intital</div>
+ <script>
+   // Figure out the path segments for the route which should load initially.
+   
+  // console.log ("window json" + JSON.stringify(window));
+   const pathnameSplit = window.location.pathname.split('/');
+    const pathSegments = pathnameSplit.length > 1 ? pathnameSplit.slice(1) : '';
+  console.log("pathnameSplit:" + pathnameSplit) ;
+  console.log("pathnameSegments:" + pathSegments) ;
+  alert ("located:" + pathnameSplit +":" + pathSegments);
+ 
+  window.addEventListener('load', function(event) {
+    alert ("here we go");
+})
+var elem = document.querySelector('#dombooze');
+
+// Get HTML content
+var html = elem.innerHTML;
+
+// Set HTML content
+elem.innerHTML = 'We can dynamically change the HTML. We can even include HTML elements like <a href="#">this link</a>.';
+// var req = new XMLHttpRequest();
+// req.open("GET", "https://google.com", true);
+// req.onreadystatechange = function () {
+//   if (req.readyState != 4 || req.status != 200) return;
+//   document.getElementById('dombooze')=req.responseText;
+// };
+// req.send();
+
+// Set up our HTTP request
+var xhr = new XMLHttpRequest();
+
+// Setup our listener to process completed requests
+xhr.onload = function () {
+
+	// Process our return data
+	if (xhr.status >= 200 && xhr.status < 300) {
+		// Runs when the request is successful
+		console.log(JSON.parse(xhr.responseText));
+	} else {
+		// Runs when it's not
+		console.log(JSON.parse(xhr.responseText));
+	}
+
+};
+
+// Create and send a GET request
+// The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+// The second argument is the endpoint URL
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+xhr.send();
+
+
+ </script>   
+</body>
+
+</html>
